@@ -1,47 +1,78 @@
+*{
+  box-sizing: border-box;
+}
 
-/* Hello dear CSS er's this code has also been taken from w3schools.com sample. */
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-/*dackground-image: linear-gradient(to right, rgb(63, 119, 222), rgb(239, 239, 239));*/
+body{
+  margin: 0%;
+  color: #00a9ca;
+  padding: 0%;
+  background-color: rgb(88, 88, 88);
+  height: 100vh;
+}
+a{
+  text-decoration: none;
+  color: #F5D7E3;
+}
+nav{
+  background-color: blueviolet;
+  margin: 1em 1em;
+  height: 7%;
+  border-radius: 5px;
+}
+
+.rightnav a, .leftnav a{
+  font-size: 1.5rem;
+}
+.navcontainer{
+  display: flex;
+  justify-content: space-between;
   height: 100%;
-  color: #777;
-  line-height: 1.8;
+  font-size: 1.5em;
+}
+.rightnav{
+  align-self: center;
+  display: flex;
+  align-items: center;
 }
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+.rightnav img{
+  padding: 0.3em;
+}
+.leftnav{
+  display: flex;
+  justify-content: space-between;
+  width: 18%;
+  align-items: center;
+}
+.mainIntro{
+  border-radius: 7px;
+  margin: 0em 1em;
+  height: 90%;
+  background-image: url(./res/programming.jpg);
   background-size: cover;
+  display: grid;
+  grid-template-rows: auto auto;
+
+}
+.layer1{
+  display: flex;
+  margin: auto;
+  font-size: 5em;
+}
+.layer2{
+  display: flex;
+  margin: auto;
+  font-size: 1.5em;
+  text-align: center;
+  flex-direction: column;
+}
+#lastname, #firstname{
+  position: absolute;
+}
+#lastname{
+  right: -150px;
+}
+#firstname{
+  left: -400px;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('https://github.com/Bibek979/mysite.cc/blob/master/res/IMG_20181105_234438.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("image/portfolio2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("image/work.jpg");
-  min-height: 400px;
-}
-
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
