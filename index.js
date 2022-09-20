@@ -20,4 +20,4 @@ const heroAnimation = () => {
     }
 
 }
-window.onload = heroAnimation();
+window.onscroll = heroAnimation();
