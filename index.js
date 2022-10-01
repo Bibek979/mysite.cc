@@ -20,4 +20,7 @@ const heroAnimation = () => {
     }
 
 }
-window.onscroll = heroAnimation();
+
+// setInterval(()=>{
+//     heroAnimation();
+// }, 10000 )

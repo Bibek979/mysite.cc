@@ -6,7 +6,7 @@ body{
   margin: 0%;
   color: #00a9ca;
   padding: 0%;
-  background-color: rgb(88, 88, 88);
+  background-color: rgb(8, 8, 8);
   height: 100vh;
 }
 a{
@@ -41,15 +41,22 @@ nav{
 .leftnav{
   display: flex;
   justify-content: space-between;
-  width: 18%;
+  width: 10em;
   align-items: center;
+}
+
+.layer1 h3{
+  font-size: 4rem;
+  color: white;
 }
 .mainIntro{
   border-radius: 7px;
   margin: 0em 1em;
   height: 90%;
   background-image: url(./res/programming.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-rows: auto auto;
 
@@ -66,16 +73,54 @@ nav{
   text-align: center;
   flex-direction: column;
 }
-#lastname, #firstname{
-  position: absolute;
-}
-#lastname{
-  right: -150px;
-}
-#firstname{
-  left: -400px;
+
+.layer2 h4, .layer2 p{
+  color: white;
 }
 .notice {
   color: white;
 }
 
+.heading h1{
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.portfolio{
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.portfolio-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-card h2{
+  text-align: center;
+}
+.portfolio-card img{
+  width: 80%;
+}
+.menu-icon{
+  display: none;
+}
+.menu-icon img{
+  width: 1em;
+}
+
+@media screen and (max-width: 583px) {
+  .leftnav{
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    align-self: center;
+    padding-right: 0.5em;
+  }
+  .layer1 h3{
+    text-align: center;
+  }
+}
