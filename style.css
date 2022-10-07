@@ -8,6 +8,7 @@ body{
   padding: 0%;
   background-color: rgb(8, 8, 8);
   height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 }
 a{
   text-decoration: none;
@@ -20,8 +21,18 @@ nav{
   border-radius: 5px;
 }
 
+ul{
+  list-style: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-icons{
+  height: 2em;
+}
 .rightnav a, .leftnav a{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .navcontainer{
   display: flex;
@@ -40,13 +51,14 @@ nav{
 }
 .leftnav{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 10em;
   align-items: center;
 }
 
 .layer1 h3{
   font-size: 4rem;
+  font-weight: bolder;
   color: white;
 }
 .mainIntro{
@@ -85,6 +97,8 @@ nav{
   font-size: 4rem;
   color: white;
   text-align: center;
+  border: 10px dotted forestgreen;
+   
 }
 
 .portfolio{
@@ -104,23 +118,46 @@ nav{
 .portfolio-card img{
   width: 80%;
 }
-.menu-icon{
+#menu-icon{
   display: none;
 }
-.menu-icon img{
+
+#menu-icon:hover .sub-menu{
+  display: block;
+}
+#menu-icon img{
   width: 1em;
+}
+
+.sub-menu{
+  display: none;
+  position: absolute;
+  right: 0px;
+}
+
+.sub-menu ul li {
+  font-size: 1rem;
+}
+
+#menu-close-icon {
+  display: none;
 }
 
 @media screen and (max-width: 583px) {
   .leftnav{
     display: none;
   }
-  .menu-icon {
+  #menu-icon {
     display: block;
     align-self: center;
     padding-right: 0.5em;
   }
   .layer1 h3{
+    font-size: 2rem;
     text-align: center;
+  }
+  .portfolio {
+    display: flex;
+    flex-direction: column;
   }
 }

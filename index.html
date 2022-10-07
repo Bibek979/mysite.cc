@@ -7,23 +7,36 @@
   <title>Bibek's Portfolio</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="./res/globeicon.png" type="image/icon type">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
     <div class="navcontainer">
       <div class="rightnav">
-        <img src="./res/globeicon.png" width="60%" alt="" srcset="">
+        <img src="./res/globeicon.png" alt="Globe Icon" class="navbar-icons">
         <a href="">bib3k.info</a>
       </div>
       <div class="leftnav">
         <a href="https://www.bib3k.info">Home</a>
         <a href="#projects">Portfolio</a>
         <a href="#">
-          <img src="./res/messageme.png" alt="" width="80%">
+          <img src="./res/messageme.png" alt="Message Me" class="navbar-icons">
         </a>
       </div>
-      <div class="menu-icon">
-        <img src="./res/menu.png" alt="">
+      <div id="menu-icon" onmouseover="mouseOver()" onmouseout="mouseOut()">
+        <img src="./res/menu.png" id="menu-icon-img" alt="menu icon">
+        <img src="./res/cross.png" id="menu-close-icon" alt="menu close icon">
+        <div class="sub-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#">Message Me</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>

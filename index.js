@@ -24,3 +24,13 @@ const heroAnimation = () => {
 // setInterval(()=>{
 //     heroAnimation();
 // }, 10000 )
+
+const mouseOver = () => {
+    // document.getElementById("menu-icon-img").src = "./res/cross.png";
+    // console.log("Menu Button Clicked")
+    console.log("Mouse Entered");
+}
+
+const mouseOut = () => {
+    console.log("Mouse is out")
+}
