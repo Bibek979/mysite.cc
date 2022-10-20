@@ -130,15 +130,23 @@ ul{
 }
 
 .sub-menu{
+  background-color: blueviolet;
+  border-radius: 3px;
   display: none;
   position: absolute;
-  right: 0px;
+  right: 4%;
+  margin-top: 0.7rem;
 }
 
 .sub-menu ul li {
   font-size: 1rem;
+  color: black;
 }
 
+.sub-menu ul li a{
+  font-weight: bolder;
+  color: black;
+}
 #menu-close-icon {
   display: none;
 }
@@ -160,4 +168,31 @@ ul{
     display: flex;
     flex-direction: column;
   }
+}
+
+.skills-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skills-container div{
+  text-align: center;
+}
+
+.skills-container div p{
+  font-size: 03em;
+}
+
+.why-me-section{
+  text-align: center;
+}
+
+footer{
+  background-color: blueviolet;
+  text-align: center;
+  margin: 0.8em 0.5em;
+  height: 5%;
+  border-radius: 5px;
 }
