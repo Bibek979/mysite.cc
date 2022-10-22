@@ -103,6 +103,7 @@ ul{
 
 .portfolio{
   display: flex;
+  justify-content: space-evenly;
   /* justify-content: space-evenly; */
 }
 
@@ -110,14 +111,29 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 32%;
 }
 
 .portfolio-card h2{
   text-align: center;
 }
-.portfolio-card img{
+
+.portfolio-card a{
+  text-align: center;
+}
+
+.portfolio-card a img{
+  transition: 0.3s;
+  transition-timing-function: linear;
   width: 80%;
 }
+
+.portfolio-card a img:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+
 #menu-icon{
   display: none;
 }
@@ -196,3 +212,4 @@ footer{
   height: 5%;
   border-radius: 5px;
 }
+
