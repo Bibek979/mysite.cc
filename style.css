@@ -205,6 +205,16 @@ ul{
   text-align: center;
 }
 
+.focused-skill:hover{
+  transform: scale(1.1);
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.unfocused-skill{
+  opacity: 0.3;
+}
+
 footer{
   background-color: blueviolet;
   text-align: center;
