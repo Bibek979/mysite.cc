@@ -181,8 +181,13 @@ ul{
     text-align: center;
   }
   .portfolio {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-card{
+    width: 100%;
   }
 }
 

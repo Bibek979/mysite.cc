@@ -6,6 +6,6 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         $("#will-disappear").fadeOut();
-        $("#first-name").animate({fontSize: '4.5em'});
+        $("#first-name").animate({fontSize: '4.5rem'});
     })
 })
