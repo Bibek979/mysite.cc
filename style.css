@@ -16,8 +16,8 @@ a{
 }
 nav{
   background-color: blueviolet;
-  margin: 1em 1em;
-  height: 7%;
+  margin: 0.5em 0.5em;
+  height: 9%;
   border-radius: 5px;
 }
 
@@ -31,8 +31,9 @@ ul{
 .navbar-icons{
   height: 2em;
 }
-.rightnav a, .leftnav a{
+.rightnav-logo-text a, .leftnav a{
   font-size: 1.2rem;
+  font-weight: 900;
 }
 .navcontainer{
   display: flex;
@@ -47,8 +48,14 @@ ul{
 }
 
 .rightnav img{
-  padding: 0.3em;
+  padding: 0.1em;
 }
+
+.rightnav-logo-text p{
+  margin: 0px;
+  font-size: 0.5rem;
+}
+
 .leftnav{
   display: flex;
   justify-content: space-around;
@@ -62,11 +69,11 @@ ul{
   color: white;
 }
 .mainIntro{
-  border-radius: 7px;
-  margin: 0em 1em;
+  /* border-radius: 7px; */
+  /* margin: 0em 1em; */
   height: 90%;
   background-image: url(./res/programming.jpg);
-  background-size: contain;
+  /* background-size: contain; */
   background-position: center;
   background-repeat: no-repeat;
   display: grid;
@@ -88,6 +95,14 @@ ul{
 
 .layer2 h4, .layer2 p{
   color: white;
+}
+.layer2 h4{
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+.layer2 p{
+  margin-top: 0px;
 }
 .notice {
   color: white;
@@ -137,18 +152,34 @@ ul{
 #menu-icon{
   display: none;
 }
-
+/* 
 #menu-icon:hover .sub-menu{
   display: block;
+} */
+
+.sub-menu{
+  display: none;
 }
+
 #menu-icon img{
   width: 1em;
 }
 
-.sub-menu{
+.menu-icon-img-class{
+  display: block;
+}
+
+.menu-icon-img-cls{
+  display: none;
+}
+.menu-close-icon-active{
+  display: block;
+}
+
+.sub-menu-active{
+  display: block;
   background-color: blueviolet;
   border-radius: 3px;
-  display: none;
   position: absolute;
   right: 4%;
   margin-top: 0.7rem;
@@ -163,7 +194,7 @@ ul{
   font-weight: bolder;
   color: black;
 }
-#menu-close-icon {
+.menu-close-icon-disabled {
   display: none;
 }
 
@@ -218,6 +249,10 @@ ul{
 
 .unfocused-skill{
   opacity: 0.3;
+}
+
+.contact-me-form {
+  height: 500px;
 }
 
 footer{
